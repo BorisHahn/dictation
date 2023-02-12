@@ -1,0 +1,63 @@
+.modal {
+  margin: 20px 0 0 0;
+  padding: 5px;
+  width: 350px;
+  border-radius: 5px;
+  color: black;
+  visibility: hidden;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal_open {
+  composes: modal;
+  visibility: visible;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 24px;
+}
+
+.result {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+.list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.correct {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  color: green;
+}
+
+.incorrect {
+  composes: correct;
+  color: red;
+}
+
+.back {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
